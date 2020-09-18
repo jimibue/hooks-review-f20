@@ -5,6 +5,7 @@ import { Link, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Hooks from "./components/Hooks";
 import Users from "./Users/Users";
+import ShowUser from "./Users/ShowUser";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/hooks" component={Hooks} />
         <Route exact path="/users" component={Users} />
+        <Route exact path="/users/:id" component={ShowUser} />
       </Switch>
     </div>
   );

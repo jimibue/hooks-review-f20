@@ -70,3 +70,48 @@ const Users = () => {
 };
 
 export default Users;
+
+// class Component extends React.Component {
+//   state = {
+//     count: 0,
+//   };
+//   componentDidMount() {
+//     console.log("mounted");
+//   }
+
+//   add() {
+//     this.setState({
+//       count: this.state.count + 1,
+//     });
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h1>{this.state.count}</h1>
+//         <p>{this.props.name}</p>
+//         <button onClick={this.add}>add</button>
+//       </div>
+//     );
+//   }
+// }
+
+// let Component1 = ({ name }) => {
+
+//   const [count, setCount] = useState(0);
+//   useEffect(() => {
+//     console.log("mounted");
+//   }, []);
+//   const add = () => {
+//     setCount(count + 1);
+//   };
+//   return (
+//     <div>
+//       <h1>{count}</h1>
+//       <p>{name}</p>
+//       <button onClick={add}>add</button>
+//     </div>
+//   );
+// };
+
+// <Component  name='c1'/>
+// <Component1 name='c2' />
